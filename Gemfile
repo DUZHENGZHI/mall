@@ -24,18 +24,24 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# 生成json
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # 单元测试
+
+  gem 'database_cleaner', '~> 1.5.3'#与rspec整合的，防止数据污染
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'#单独对控制器的
+
 end
 
 group :development do
@@ -49,3 +55,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bootstrap-sass'#css框架
+gem 'font-awesome-rails'#图标库
+gem 'sorcery'#轻量级用户管理工具
+gem 'ancestry' #树形关系管理
+gem 'will_paginate' #数据库查询的分页
+gem 'paperclip', '~> 5.0.0' #上传图片！需要以来imagemagick
