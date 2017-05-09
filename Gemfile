@@ -4,13 +4,15 @@ source 'https://ruby.taobao.org'
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
+
+
 end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+# gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -62,3 +64,10 @@ gem 'sorcery'#轻量级用户管理工具
 gem 'ancestry' #树形关系管理
 gem 'will_paginate' #数据库查询的分页
 gem 'paperclip', '~> 5.0.0' #上传图片！需要以来imagemagick
+
+group :development do
+  gem 'mysql2', '>= 0.3.18', '< 0.5'
+end
+group :production do
+  gem 'pg', '0.20.0'
+end
