@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+一个基于rails 的B2C项目
+前台主要功能:登录注册，分类商品展示，搜索商品等，商品地址，购物车，支付等功能会陆续完成。
+后台主要功能:商品分类添加、编辑、删除。商品管理及商品图片上传，管理员权限等。
