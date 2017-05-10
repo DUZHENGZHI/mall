@@ -64,6 +64,8 @@ gem 'sorcery'#轻量级用户管理工具
 gem 'ancestry' #树形关系管理
 gem 'will_paginate' #数据库查询的分页
 gem 'paperclip', '~> 5.0.0' #上传图片！需要以来imagemagick
+gem 'puma', '~> 3.0'
+
 
 group :development do
   gem 'mysql2', '>= 0.3.18', '< 0.5'
