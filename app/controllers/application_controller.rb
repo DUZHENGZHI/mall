@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
       if logged_in?
         uuid = current_user.uuid
       else
-        uuid = RandomCode.generate_utoken
+        # uuid = RandomCode.generate_utoken
       end
     end
 
