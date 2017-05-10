@@ -69,5 +69,5 @@ group :development do
   gem 'mysql2', '>= 0.3.18', '< 0.5'
 end
 group :production do
-  gem 'pg', '0.20.0'
+  gem 'pg'
 end
