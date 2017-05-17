@@ -32,7 +32,10 @@ class User < ApplicationRecord
    def need_validate_password
    	#new_record判断是否id为空
    	self.new_record?||
-   	(!self.password.nil? || !self.password_confirmation.nil)
+   	(!self.password.nil? || !self.password_confirmation.nil?)
    end
+
+
+
 
 end
