@@ -4,14 +4,13 @@ class ApplicationController < ActionController::Base
   before_action :set_browser_uuid
 
   protected
-    def auth_user
-      unless logged_in?
-        flash[:notice] = "请登录"
-        redirect_to new_session_path
-      end
+  def auth_user
+    unless logged_in?
+      flash[:notice] = "请登录"
+      redirect_to new_session_path
     end
+  end
 
-#取得用户数据
   def fetch_home_data
     @categories = Category.grouped_data
     @shopping_cart_count = ShoppingCart.by_user_uuid(session[:user_uuid]).count
@@ -24,7 +23,7 @@ class ApplicationController < ActionController::Base
       if logged_in?
         uuid = current_user.uuid
       else
-        # uuid = RandomCode.generate_utoken
+        uuid = RandomCode.generate_utoken
       end
     end
 

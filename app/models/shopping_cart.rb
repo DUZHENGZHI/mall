@@ -1,12 +1,11 @@
 class ShoppingCart < ApplicationRecord
 
-  validates :user_uuid, presence: true
+  # validates :user_uuid, presence: true
   validates :product_id, presence: true
   validates :amount, presence: true
 
   belongs_to :product
 
-  # 传递一个uuid 来查询uuid下面的购物车数据
   scope :by_user_uuid, -> (user_uuid) { where(user_uuid: user_uuid) }
 
   def self.create_or_update! options = {}
@@ -24,6 +23,5 @@ class ShoppingCart < ApplicationRecord
 
     record
   end
-
 
 end

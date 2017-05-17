@@ -12,13 +12,14 @@ Rails.application.routes.draw do
     get :search, on: :collection
 
   end
-  
+
   resources :shopping_carts
   resources :addresses do
     member do
       put :set_default_address
     end
   end
+  
   resources :orders
 
 
