@@ -13,8 +13,7 @@ module MasterRailsByMall
     # -- all .rb files in that directory are automatically loaded.
 
     #把方法放在系统自动加载路径,加载lib
-    # config.autoload_paths += %W[#{Rails.root}/lib]
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W[#{Rails.root}/lib]
 
 
 
