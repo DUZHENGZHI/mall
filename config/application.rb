@@ -19,6 +19,7 @@ module MasterRailsByMall
 
 
 
+
     #希望手工控制，令generator命令不自动生成参数文件
     config.generators do |generator|
       generator.assets false #generator生成控制器的时候，不生成js和css
