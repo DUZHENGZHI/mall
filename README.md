@@ -9,7 +9,7 @@
 
     后台主要功能:商品分类添加、编辑、删除。商品管理及商品图片上传，管理员权限等。
     
-     bug反馈:zhengzhidu@gmail.com  
+    bug反馈:zhengzhidu@gmail.com  
 
 
 
