@@ -25,13 +25,16 @@
      <div class="alert alert-info">
       <%= flash[:notice] %>
      </div>
+
     <% end %>
     <%= yield %>
   </div>
 
     <!-- 放后面加快载速度 -->
   <%= javascript_include_tag 'application' %>
+
   <%= yield :javascripts%>
+
 
 
   </body>
