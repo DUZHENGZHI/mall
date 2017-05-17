@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   resources :products,only: [:show] do
 
     get :search, on: :collection
-    
+
   end
+  
   resources :shopping_carts
   resources :addresses do
     member do

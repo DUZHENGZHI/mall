@@ -1,4 +1,5 @@
 module RandomCode
+  
   class << self
     def generate_password len = 8
       seed = (0..9).to_a + ('a'..'z').to_a + ('A'..'Z').to_a + ['!', '@', '#', '$', '%', '.', '*'] * 4
